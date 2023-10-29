@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7957fb7b-c3a9-4b15-86fb-e2c7333bf79c">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[Select*from identitas]]>
+	</queryString>
+	<field name="nama" class="java.lang.String"/>
+	<field name="id_dokter" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<group name="nama">
+		<groupExpression><![CDATA[$F{nama}]]></groupExpression>
+	</group>
+	<group name="id_dokter">
+		<groupExpression><![CDATA[$F{id_dokter}]]></groupExpression>
+	</group>
+	<group name="alamat">
+		<groupExpression><![CDATA[$F{alamat}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<staticText>
+				<reportElement x="146" y="29" width="187" height="30" forecolor="#003366" uuid="fbd16474-6e7d-48a8-9fa9-e4e0e827fd78"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEJAHTERA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="363" y="13" width="61" height="60" uuid="76073291-4c26-4222-ba5f-5f47899b6f91"/>
+				<imageExpression><![CDATA["C:\\Users\\Ailsa\\OneDrive\\Pictures\\rs.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="555" height="30" forecolor="#000000" uuid="2884fe23-3b11-4a2b-a48d-21967c0e22ae"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="24" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[DATA DOKTER]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="64" y="27" width="134" height="30" forecolor="#000000" uuid="e4519db6-31ee-4741-9858-4d01fb63e2a6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="47091bc6-54e4-4fc3-9c53-7995e34d3d19"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="198" y="27" width="155" height="30" forecolor="#000000" uuid="4c4dc44f-505c-4f66-8c20-d21a40283f72">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="27" width="138" height="30" forecolor="#000000" uuid="ce461d97-a948-4c43-afc2-a8d6e65b0362">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="198" y="0" width="155" height="30" uuid="d8b368e8-73b4-4da2-9119-3868f654c569">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_dokter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="0" width="134" height="30" uuid="809c000b-9668-4916-a8e1-57619a056bb0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="0" width="138" height="30" uuid="d017b199-63de-4383-94a0-45d399a2230f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>
