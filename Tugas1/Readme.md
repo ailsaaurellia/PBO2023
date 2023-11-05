@@ -3,6 +3,7 @@ Kata kunci public, private, dan protected dalam pemrograman disebut sebagai "Aks
 1. Akses modifier public dapat diakses dari mana saja, baik dari dalam kelas yang sama, kelas yang berbeda di dalam package yang sama, atau dari luar package.
 2. Akses modifier private hanya dapat diakses dari dalam kelas yang sama di mana elemen tersebut didefinisikan.
 3. Akses modifier protected dapat diakses dari dalam kelas yang sama, kelas turunan (subclass), dan juga kelas di dalam package yang sama.
+
 Refactor adalah tindakan atau operasi yang membantu Anda memperbaiki, mengorganisir ulang, atau memperbaiki kode sumber Anda dengan lebih efisien dan aman.
 
 # TAHAPAN-TAHAPAN 
